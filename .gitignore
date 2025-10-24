@@ -1,0 +1,36 @@
+# Root .gitignore for the monorepo-like app folder
+
+# Node modules in project folders
+/backend/node_modules/
+/frontend/node_modules/
+
+# Build outputs
+/backend/dist/
+/frontend/.next/
+/frontend/out/
+
+# Environment files
+**/.env
+# keep .env.local tracked (do not ignore)
+# ignore other env.<env>.local files
+**/.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Prisma migrations (optional to ignore)
+/prisma/migrations/
+
+# Misc
+*.log
+
